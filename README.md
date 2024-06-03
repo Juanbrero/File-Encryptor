@@ -1,6 +1,6 @@
 >[!CAUTION]
->Usar bajo responsabilidad propia.
->Errores en las claves de encriptado generaran una nueva capa de encriptado sobre los datos con dicha clave.
+>Usar bajo responsabilidad propia.<br>
+>Errores en el ingreso de la clave de encriptado generara una nueva capa de encriptado sobre los datos con dicha clave.
 
 # File Encryptor
 
