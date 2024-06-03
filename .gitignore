@@ -1,0 +1,98 @@
+# Ignorar byte-compiled / archivos optimizados / DLL
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ignorar archivos de extensiones C
+*.so
+
+# Ignorar distribución / empaquetado
+.Python
+build/
+dist/
+develop-eggs/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Ignorar archivos específicos de PyInstaller
+*.manifest
+*.spec
+
+# Ignorar archivos de logs de instalación
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Ignorar informes de pruebas unitarias / cobertura
+htmlcov/
+.tox/
+.nox/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Ignorar traducciones
+*.mo
+*.pot
+
+# Ignorar archivos de cuadernos de Jupyter
+.ipynb_checkpoints
+
+# Ignorar configuraciones de IPython
+profile_default/
+ipython_config.py
+
+# Ignorar entornos virtuales
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Ignorar archivos y carpetas específicas de IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Ignorar configuraciones locales
+local_settings.py
+
+# Ignorar logs
+*.log
+
+# Ignorar archivos temporales
+*.tmp
+*.temp
+
+# Ignorar archivos de compilación
+*.obj
+*.o
+*.a
+*.lib
+*.dll
+*.exe
+*.out
+
+# Ignorar archivos de configuración de sistemas de compilación
+CMakeFiles/
+CMakeCache.txt
+*.cmake
+Makefile
+CMakeLists.txt
+*.mk
