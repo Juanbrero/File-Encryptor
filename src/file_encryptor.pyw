@@ -138,26 +138,27 @@ class Window:
 
 def xor_mask(file_name, key):
     key_index = 0
-    content = ''
-    encrypted_content = ''
+    encrypted_content = bytearray()
     max_key_index = len(key) - 1
-    # extraigo el contenido del archivo
-    with open(file_name, 'r') as f:
+    key_bytes = key.encode()  # Convertimos la clave a bytes
+
+    # extraigo el contenido del archivo en modo binario
+    with open(file_name, 'rb') as f:
         content = f.read()
 
         # aplico la mascara xor
-        for char in content:
-            encrypted_char = ord(char) ^ ord(key[key_index])
-            encrypted_content += chr(encrypted_char)
+        for byte in content:
+            encrypted_byte = byte ^ key_bytes[key_index]
+            encrypted_content.append(encrypted_byte)
             if key_index >= max_key_index:
                 key_index = 0
             else:
                 key_index += 1
 
     # reemplazo el contenido original por el enmascarado.
-    with open(file_name, 'w') as f:
+    with open(file_name, 'wb') as f:
         f.write(encrypted_content)
-
+    
 
 def resource_path(relative_path):
     """ Devuelve la ruta absoluta del recurso """
